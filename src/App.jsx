@@ -12,9 +12,8 @@ function App() {
     },
 
     {
-      title: "Laundry Services",
-      image:
-        "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop",
+      title: "Live Band and Music",
+      image: "/YlpmisBand.jpeg",
       desc:
         "Fast, clean, and affordable laundry services.",
       link: "#",
@@ -22,8 +21,7 @@ function App() {
 
     {
       title: "Events Venue",
-      image:
-        "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1200&auto=format&fit=crop",
+      image: "Lolas.jpg",
       desc:
         "Beautiful venue for birthdays, weddings, and celebrations.",
       link: "#",
