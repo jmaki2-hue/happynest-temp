@@ -1,5 +1,5 @@
 import React from "react";
-//(Update with "git add .", "git commit -m 'updated website design'", "git push")//
+//(Update with "git add .", "git commit -m 'updated mobile responsive design'", "git push")//
 
 function App() {
 
@@ -65,24 +65,24 @@ function App() {
   return (
     <div
       id="top"
-      className="min-h-screen bg-[#edf1f4] text-gray-800 scroll-smooth"
+      className="min-h-screen overflow-x-hidden bg-[#edf1f4] text-gray-800"
     >
 
       {/* NAVBAR */}
-      <nav className="bg-white shadow-md px-10 py-5 flex justify-between items-center sticky top-0 z-50">
+      <nav className="bg-white shadow-md px-4 md:px-10 py-5 flex justify-between items-center sticky top-0 z-50">
 
         {/* LOGO + DROPDOWN */}
         <div className="relative group">
 
           <a
             href="#top"
-            className="text-3xl font-bold text-slate-700 hover:text-blue-500 transition"
+            className="text-2xl md:text-3xl font-bold text-slate-700 hover:text-blue-500 transition"
           >
             HappyNest
           </a>
 
           {/* DROPDOWN MENU */}
-          <div className="absolute left-0 mt-3 w-72 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden">
+          <div className="absolute left-0 mt-3 w-64 md:w-72 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden">
 
             <a
               href="#liveband"
@@ -131,7 +131,7 @@ function App() {
         </div>
 
         {/* NAV LINKS */}
-        <div className="flex gap-6 text-gray-600 font-medium">
+        <div className="flex gap-3 md:gap-6 text-sm md:text-base text-gray-600 font-medium">
 
           <a href="#services" className="hover:text-blue-500 transition">
             Services
@@ -150,13 +150,13 @@ function App() {
       </nav>
 
       {/* HERO SECTION */}
-      <section className="text-center py-24 px-6 bg-gradient-to-r from-slate-100 to-blue-50">
+      <section className="text-center py-20 md:py-24 px-6 bg-gradient-to-r from-slate-100 to-blue-50">
 
-        <h1 className="text-6xl font-bold text-slate-700 mb-6">
+        <h1 className="text-4xl md:text-6xl font-bold text-slate-700 mb-6 leading-tight">
           HappyNest Services & Events
         </h1>
 
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
           Clean spaces, unforgettable celebrations, and relaxing experiences all in one modern family-friendly destination.
         </p>
 
@@ -171,10 +171,10 @@ function App() {
       {/* SERVICES SECTION */}
       <section
         id="services"
-        className="py-20 px-8 max-w-7xl mx-auto"
+        className="py-20 px-4 md:px-8 max-w-7xl mx-auto"
       >
 
-        <h2 className="text-5xl font-bold text-center text-slate-700 mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-slate-700 mb-16">
           Our Services
         </h2>
 
@@ -191,16 +191,16 @@ function App() {
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-72 object-cover"
+                className="w-full h-56 md:h-72 object-cover"
               />
 
               <div className="p-8">
 
-                <h3 className="text-3xl font-bold text-slate-700 mb-4">
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-700 mb-4">
                   {service.title}
                 </h3>
 
-                <p className="text-gray-600 text-lg leading-relaxed">
+                <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                   {service.desc}
                 </p>
 
@@ -220,10 +220,10 @@ function App() {
       {/* VIDEO CLIPS */}
       <section
         id="videos"
-        className="py-20 px-8 bg-slate-100"
+        className="py-20 px-4 md:px-8 bg-slate-100"
       >
 
-        <h2 className="text-5xl font-bold text-center text-slate-700 mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-slate-700 mb-16">
           Featured Clips
         </h2>
 
@@ -234,7 +234,7 @@ function App() {
 
             <video
               controls
-              className="w-full h-[350px] object-cover"
+              className="w-full h-[250px] md:h-[350px] object-cover"
             >
 
               <source
@@ -246,7 +246,7 @@ function App() {
 
             <div className="p-6">
 
-              <h3 className="text-2xl font-bold text-slate-700">
+              <h3 className="text-xl md:text-2xl font-bold text-slate-700">
                 Events & Celebrations
               </h3>
 
@@ -259,7 +259,7 @@ function App() {
 
             <video
               controls
-              className="w-full h-[350px] object-cover"
+              className="w-full h-[250px] md:h-[350px] object-cover"
             >
 
               <source
@@ -271,7 +271,7 @@ function App() {
 
             <div className="p-6">
 
-              <h3 className="text-2xl font-bold text-slate-700">
+              <h3 className="text-xl md:text-2xl font-bold text-slate-700">
                 Resort & Outings Experience
               </h3>
 
@@ -286,31 +286,33 @@ function App() {
       {/* CONTACT SECTION */}
       <section
         id="contact"
-        className="py-24 px-8 text-center"
+        className="py-24 px-4 md:px-8 text-center"
       >
 
-        <h2 className="text-5xl font-bold text-slate-700 mb-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-slate-700 mb-10">
           Book With Us
         </h2>
 
-        <p className="text-xl text-gray-600 mb-10">
+        <p className="text-lg md:text-xl text-gray-600 mb-10">
           Ready to schedule your service or reserve your venue?
         </p>
 
         <a
           href="mailto:jmakinano.arthur@gmail.com"
-          className="bg-slate-700 hover:bg-slate-800 text-white px-10 py-5 rounded-full text-xl transition shadow-lg"
+          className="bg-slate-700 hover:bg-slate-800 text-white px-8 md:px-10 py-4 md:py-5 rounded-full text-lg md:text-xl transition shadow-lg inline-block"
         >
           Book Through Email
         </a>
 
-        <div className="mt-16 text-gray-600 space-y-4 text-lg">
+        <div className="mt-16 text-gray-600 space-y-4 text-base md:text-lg">
 
           <p>📍 Trece Martirez, Cavite</p>
 
           <p>📞 +63 936 926 0413</p>
 
-          <p>✉️ jmakinano.arthur@gmail.com</p>
+          <p className="break-all">
+            ✉️ jmakinano.arthur@gmail.com
+          </p>
 
         </div>
 
@@ -319,7 +321,7 @@ function App() {
       {/* FOOTER COPYRIGHT */}
       <footer className="bg-white border-t border-gray-200 py-6 mt-10">
 
-        <div className="text-center text-gray-500 text-sm space-y-2">
+        <div className="text-center text-gray-500 text-xs md:text-sm space-y-2 px-4">
 
           <p>
             © 2026 HappyNest Services & Events. All Rights Reserved.
