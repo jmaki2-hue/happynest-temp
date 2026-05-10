@@ -28,7 +28,7 @@ function App() {
       image: "/Lolas.jpg",
       desc:
         "Beautiful venue for birthdays, weddings, and celebrations.",
-      link: "#",
+      link: "https://samplelolas75751.vercel.app/",
     },
 
     {
